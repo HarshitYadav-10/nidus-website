@@ -899,6 +899,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member .pic {
   overflow: hidden;
+  border-radius: 50%;
+  border: 7px solid #5390f8;
   text-align: center;
 }
 
@@ -907,10 +909,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .details {
-  background: #50d8af;
-  color: #fff;
+  /* background: #5390f8; */
+  color: #366dcc;
+  /* color: #fff; */
   padding: 15px;
-  border-radius: 0 0 3px 3px;
+  border-radius: 7px;
 }
 
 #team .member h4 {
@@ -922,7 +925,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member span {
   font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 1.2rem;
 }
 
 #team .member .social {
@@ -930,11 +933,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social a {
-  color: #fff;
+  color: #5390f8;
 }
 
 #team .member .social i {
-  font-size: 16px;
+  font-size: 1.7rem;
   margin: 0 2px;
 }
 
