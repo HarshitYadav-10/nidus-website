@@ -18,7 +18,9 @@ a {
   transition: 0.5s;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   color: #51d8af;
   outline: none;
   text-decoration: none;
@@ -29,7 +31,12 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -66,6 +73,91 @@ h1, h2, h3, h4, h5, h6 {
   background: #0c2e8a;
   color: #fff;
 }
+
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 1em 5%;
+  text-align: left;
+  font-size: 50;
+}
+
+/* Styling the area of the slides */
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 510px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides 
+    with a fixed width and height */
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+/* Add animation to the slides */
+
+.slide-wrapper {
+
+  /* Calculate the total width on the
+      basis of number of slides */
+  width: calc(728px * 4);
+
+  /* Specify the animation with the
+      duration and speed */
+  animation: slide 20s ease infinite;
+}
+
+/* Set the background color
+    of each of the slides */
+
+.slide:nth-child(1) {
+  background: green;
+}
+
+.slide:nth-child(2) {
+  background: pink;
+}
+
+.slide:nth-child(3) {
+  background: red;
+}
+
+.slide:nth-child(4) {
+  background: yellow;
+}
+
+/* Define the animation 
+    for the slideshow */
+
+@keyframes slide {
+
+  /* Calculate the margin-left for 
+      each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+
+  20% {
+    margin-left: calc(-728px * 1);
+  }
+
+  20% {
+    margin-left: calc(-728px * 2);
+  }
+
+  20% {
+    margin-left: calc(-728px * 3);
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Top Bar
@@ -154,9 +246,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0;
     height: 74px;
   }
+
   #header #logo h1 {
     font-size: 34px;
   }
+
   #header #logo img {
     max-height: 40px;
   }
@@ -205,7 +299,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#intro .intro-content .btn-get-started, #intro .intro-content .btn-projects {
+#intro .intro-content .btn-get-started,
+#intro .intro-content .btn-projects {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -269,7 +364,8 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-.nav-menu, .nav-menu * {
+.nav-menu,
+.nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -288,12 +384,12 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -348,11 +444,12 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+.nav-menu li:hover>a,
+.nav-menu>.menu-active>a {
   color: #50d8af;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 10px;
 }
 
@@ -376,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   color: #50d8af;
 }
 
@@ -506,7 +603,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header h2 {
   font-size: 32px;
-  color: #0c2e8a;
+  color: #53a3d0;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -548,6 +645,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #about .about-img {
     height: auto;
   }
+
   #about .about-img img {
     margin-left: 0;
     padding-bottom: 30px;
@@ -655,12 +753,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   #services .box .box {
     margin-bottom: 20px;
   }
+
   #services .box .icon {
     float: none;
     text-align: center;
     padding-bottom: 15px;
   }
-  #services .box h4, #services .box p {
+
+  #services .box h4,
+  #services .box p {
     margin-left: 0;
     text-align: center;
   }
@@ -683,7 +784,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   opacity: 1;
 }
 
-#clients .owl-nav, #clients .owl-dots {
+#clients .owl-nav,
+#clients .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -822,7 +924,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 auto 15px auto;
 }
 
-#testimonials .owl-nav, #testimonials .owl-dots {
+#testimonials .owl-nav,
+#testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -959,7 +1062,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #50d8af;
 }
 
-#contact .contact-info address, #contact .contact-info p {
+#contact .contact-info address,
+#contact .contact-info p {
   margin-bottom: 0;
   color: #000;
 }
@@ -980,12 +1084,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #50d8af;
 }
 
-#contact .contact-address, #contact .contact-phone, #contact .contact-email {
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
+
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
     padding: 20px 0;
   }
 }
@@ -1028,7 +1137,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+#contact .form #sendmessage.show,
+#contact .form #errormessage.show,
+#contact .form .show {
   display: block;
 }
 
@@ -1040,7 +1151,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
 }
 
-#contact .form input, #contact .form textarea {
+#contact .form input,
+#contact .form textarea {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
